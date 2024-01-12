@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JDBC.course.CourseUtil">
+    <children>
+        <TableView fx:id="courseTableView" layoutX="199.0" prefHeight="527.0" prefWidth="663.0" AnchorPane.bottomAnchor="37.66666666666663" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="0.33333333333325754" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="56.00006103515625" text="课程号" />
+                <TableColumn fx:id="Name" prefWidth="109.99994277954102" text="课程名字" />
+                <TableColumn fx:id="coachid" prefWidth="57.99993896484375" text="教练号" />
+                <TableColumn fx:id="type" prefWidth="63.99992370605469" text="课程类别" />
+                <TableColumn fx:id="duration" prefWidth="74.6666259765625" text="课程时间" />
+                <TableColumn fx:id="description" prefWidth="173.33334350585938" text="课程描述" />
+                <TableColumn fx:id="examine" prefWidth="81.333251953125" text="是否可预约" />
+                <TableColumn fx:id="price" prefWidth="74.6666259765625" text="价格" />
+            <TableColumn fx:id="number" prefWidth="134.6666259765625" text="班级人数" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#change" text="编辑" />
+                        <MenuItem mnemonicParsing="false" onAction="#btnDel" text="删除" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TableView>
+        <TextField fx:id="CoachidField" layoutX="22.0" layoutY="105.0" promptText="请输入教练号" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="105.0" />
+        <TextField fx:id="typeField" layoutX="22.0" layoutY="143.0" promptText="请输入课程类别" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="143.0" />
+        <TextField fx:id="durationField" layoutX="22.0" layoutY="185.0" promptText="请输入课程时间" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="185.0" />
+        <TextField fx:id="descriptionField" layoutX="22.0" layoutY="223.0" promptText="请输入课程描述" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="223.0" />
+        <TextField fx:id="examineField" layoutX="22.0" layoutY="264.0" promptText="请输入是否" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="264.0" />
+        <TextField fx:id="priceField" layoutX="22.0" layoutY="301.0" promptText="请输入价格" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="301.0" />
+        <TextField fx:id="numberField" layoutX="22.0" layoutY="342.0" promptText="请输入班级人数" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="342.0" />
+        <Pagination fx:id="pageTable" layoutX="199.0" layoutY="542.0" prefHeight="58.0" prefWidth="663.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="0.33333333333325754" />
+        <Button layoutX="22.0" layoutY="413.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="23.0" prefWidth="64.0" text="保存" />
+        <Button layoutX="22.0" layoutY="456.0" mnemonicParsing="false" onAction="#add" text="新建数据" />
+        <Button layoutX="22.0" layoutY="503.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="23.0" prefWidth="64.0" text="查询" />
+      <TextField fx:id="idField" layoutX="22.0" layoutY="25.0" promptText="请输入课程号" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="25.0" />
+      <TextField fx:id="nameField" layoutX="22.0" layoutY="65.0" promptText="课程名字" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="65.0" />
+      <Button layoutX="22.0" layoutY="375.0" mnemonicParsing="false" onAction="#searchclass" prefHeight="23.0" prefWidth="101.0" text="查询每班的人" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="375.0" />
+    </children>
+</AnchorPane>

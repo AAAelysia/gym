@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="658.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitness_club_management_system.Logmember">
+   <children>
+      <TextField fx:id="usernameField" layoutX="136.0" layoutY="414.0" prefHeight="23.0" prefWidth="229.0" promptText="请输入账号" AnchorPane.bottomAnchor="220.66666666666669" AnchorPane.leftAnchor="136.0" />
+      <Text layoutX="82.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号" wrappingWidth="24.0" AnchorPane.bottomAnchor="224.947265625" AnchorPane.leftAnchor="82.0" />
+      <Text layoutX="82.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" AnchorPane.bottomAnchor="171.947265625" AnchorPane.leftAnchor="82.0" />
+      <Button layoutX="177.0" layoutY="510.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="71.0" text="登录" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="177.0" />
+      <ImageView fitHeight="377.0" fitWidth="295.0" layoutX="76.0" AnchorPane.bottomAnchor="281.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../pictrue/0141c85cccfe57a80121416892493b.jpg@2o.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="134.0" layoutY="467.0" prefHeight="23.0" prefWidth="229.0" promptText="请输入密码" AnchorPane.bottomAnchor="167.66666666666669" AnchorPane.leftAnchor="134.0" />
+      <Button layoutX="314.0" layoutY="546.0" mnemonicParsing="false" onAction="#loginG" prefHeight="36.0" prefWidth="92.0" text="管理员登录" AnchorPane.bottomAnchor="76.33333333333326" AnchorPane.leftAnchor="314.0" />
+   </children>
+</AnchorPane>

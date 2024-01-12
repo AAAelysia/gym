@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Equipment_.EquipmentCotrol">
+    <children>
+        <TableView fx:id="tableView" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="138.6666259765625" text="名称" />
+                <TableColumn fx:id="typeColumn" prefWidth="84.0" text="类型" />
+                <TableColumn fx:id="quantityColumn" prefWidth="81.33331298828125" text="数量" />
+                <TableColumn fx:id="priceColumn" prefWidth="90.66668701171875" text="价格" />
+                <TableColumn fx:id="manufacturerColumn" prefWidth="122.666748046875" text="制造商" />
+                <TableColumn fx:id="purchaseDateColumn" prefWidth="250.66668701171875" text="购买日期" />
+            </columns>
+        </TableView>
+        <Label fx:id="pageLabel" layoutX="30.0" layoutY="370.0" prefWidth="540.0" AnchorPane.bottomAnchor="59.99999999999998" AnchorPane.leftAnchor="30.0" />
+        <TextField fx:id="searchTextField" layoutX="30.0" layoutY="10.0" prefHeight="25.0" prefWidth="227.0" promptText="输入器材名字、类型、价格、制造商" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="10.0" />
+        <Button layoutX="290.0" layoutY="11.0" mnemonicParsing="false" onAction="#searchEquipment" text="查询" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="11.0" />
+        <Button layoutX="30.0" layoutY="370.0" mnemonicParsing="false" onAction="#previousPage" text="上一页" AnchorPane.bottomAnchor="51.999999999999986" AnchorPane.leftAnchor="30.0" />
+        <Button layoutX="96.0" layoutY="370.0" mnemonicParsing="false" onAction="#nextPage" text="下一页" AnchorPane.bottomAnchor="51.999999999999986" AnchorPane.leftAnchor="96.0" />
+        <TextField fx:id="idTextField" layoutX="30.0" layoutY="400.0" prefHeight="25.0" prefWidth="50.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="30.0" />
+        <TextField fx:id="nameTextField" layoutX="100.0" layoutY="400.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="100.0" />
+        <TextField fx:id="typeTextField" layoutX="210.0" layoutY="400.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="210.0" />
+        <TextField fx:id="quantityTextField" layoutX="322.0" layoutY="400.0" prefHeight="25.0" prefWidth="50.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="322.0" />
+        <TextField fx:id="priceTextField" layoutX="389.0" layoutY="400.0" prefHeight="25.0" prefWidth="50.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="390.0" />
+        <TextField fx:id="manufacturerTextField" layoutX="450.0" layoutY="400.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="450.0" />
+        <DatePicker fx:id="purchaseDatePicker" layoutX="570.0" layoutY="400.0" prefHeight="25.0" prefWidth="150.0" AnchorPane.bottomAnchor="19.999999999999982" AnchorPane.leftAnchor="570.0" />
+        <Button layoutX="740.0" layoutY="400.0" mnemonicParsing="false" onAction="#addEquipment" text="添加" AnchorPane.bottomAnchor="21.999999999999982" AnchorPane.rightAnchor="103.0" />
+        <Button layoutX="790.0" layoutY="400.0" mnemonicParsing="false" onAction="#saveEquipment" text="保存" AnchorPane.bottomAnchor="21.999999999999982" AnchorPane.rightAnchor="53.0" />
+        <Button layoutX="843.0" layoutY="400.0" mnemonicParsing="false" onAction="#deleteEquipment" text="删除" AnchorPane.bottomAnchor="21.999999999999982" AnchorPane.rightAnchor="0.0" />
+        <Label layoutX="30.0" layoutY="430.0" text="ID" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="30.0" />
+        <Label layoutX="98.0" layoutY="430.0" text="名称" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="100.0" />
+        <Label layoutX="210.0" layoutY="430.0" text="类型" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="210.0" />
+        <Label layoutX="322.0" layoutY="430.0" text="数量" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="330.0" />
+        <Label layoutX="389.0" layoutY="430.0" text="价格" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="389.0" />
+        <Label layoutX="450.0" layoutY="430.0" text="制造商" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="450.0" />
+        <Label layoutX="570.0" layoutY="430.0" text="购买日期" AnchorPane.bottomAnchor="-1.9539925233402755E-14" AnchorPane.leftAnchor="570.0" />
+
+        <!-- 根据ID查询的框 -->
+        <TextField fx:id="searchByIdTextField" prefHeight="25.0" prefWidth="200.0" promptText="输入ID" AnchorPane.leftAnchor="618.0" AnchorPane.topAnchor="10.0" />
+        <Button layoutX="823.0" layoutY="11.0" mnemonicParsing="false" onAction="#searchById" text="查询" AnchorPane.leftAnchor="823.0" AnchorPane.topAnchor="11.0" />
+
+        <!-- 根据日期查询的框 -->
+        <DatePicker fx:id="searchByDateDatePicker" prefHeight="25.0" prefWidth="200.0" promptText="选择日期" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="10.0" />
+        <Button layoutX="564.0" layoutY="11.0" mnemonicParsing="false" onAction="#searchByDate" text="查询" AnchorPane.leftAnchor="564.0" AnchorPane.topAnchor="11.0" />
+    </children>
+
+</AnchorPane>

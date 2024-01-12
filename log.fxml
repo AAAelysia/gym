@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="535.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitness_club_management_system.Log">
+   <children>
+      <TextField fx:id="usernameField" layoutX="161.0" layoutY="301.0" prefHeight="23.0" prefWidth="229.0" promptText="请输入账号" AnchorPane.bottomAnchor="210.66666666666666" AnchorPane.leftAnchor="161.0" />
+      <Text layoutX="107.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号" wrappingWidth="24.0" AnchorPane.bottomAnchor="214.947265625" AnchorPane.leftAnchor="107.0" />
+      <Text layoutX="107.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" AnchorPane.bottomAnchor="161.947265625" AnchorPane.leftAnchor="107.0" />
+      <Button layoutX="205.0" layoutY="423.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="71.0" text="登录" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="205.0" />
+      <ImageView fitHeight="282.0" fitWidth="474.0" layoutX="14.0" layoutY="6.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="6.0">
+         <image>
+            <Image url="@../../../pictrue/0138f6590bf55aa801214550f7e6af.jpg@1280w_1l_2o_100sh.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="160.0" layoutY="354.0" prefHeight="23.0" prefWidth="229.0" promptText="请输入密码" AnchorPane.bottomAnchor="157.66666666666666" AnchorPane.leftAnchor="160.0" />
+      <Button layoutX="400.0" layoutY="466.0" mnemonicParsing="false" onAction="#loginmember" prefHeight="36.0" prefWidth="71.0" text="会员登录" />
+   </children>
+</AnchorPane>

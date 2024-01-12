@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JDBC.member.Search">
+    <children>
+        <TextField fx:id="searchField" layoutX="20.0" layoutY="20.0" prefWidth="200.0" promptText="请输入关键字" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="663.0" AnchorPane.topAnchor="20.0" />
+        <Button fx:id="searchButton" layoutX="240.0" layoutY="20.0" mnemonicParsing="false" onAction="#search_" text="查询" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="603.0" AnchorPane.topAnchor="20.0" />
+
+        <TableView fx:id="resultTable" layoutX="20.0" layoutY="60.0" prefHeight="320.0" prefWidth="859.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="3.6666666666666288">
+            <columns>
+                <TableColumn fx:id="IDCol" prefWidth="77.99999809265137" text="会员号" />
+                <TableColumn fx:id="nameCol" prefWidth="97.33329010009766" text="姓名" />
+                <TableColumn fx:id="ageCol" prefWidth="59.3333740234375" text="年龄" />
+                <TableColumn fx:id="sexCol" prefWidth="71.3333740234375" text="性别" />
+                <TableColumn fx:id="phoneCol" prefWidth="136.0" text="电话号码" />
+                <TableColumn fx:id="emailCol" prefWidth="163.33331298828125" text="邮箱" />
+                <TableColumn fx:id="addressCol" minWidth="0.0" prefWidth="170.0" text="地址" />
+                <TableColumn fx:id="passwordCol" prefWidth="81.3333740234375" text="密码" />
+            </columns>
+        </TableView>
+      <TextField fx:id="SID" layoutX="309.0" layoutY="20.0" promptText="根据主键查询" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="412.33333333333337" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="searchid" layoutX="482.0" layoutY="20.0" mnemonicParsing="false" onAction="#searchid" prefHeight="23.0" prefWidth="40.0" text="查询" AnchorPane.leftAnchor="482.0" AnchorPane.rightAnchor="361.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="searchbypege" layoutX="763.0" layoutY="20.0" mnemonicParsing="false" onAction="#searchbypege" text="分页查询" AnchorPane.leftAnchor="763.0" AnchorPane.rightAnchor="56.33333333333326" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="searchpage" layoutX="563.0" layoutY="20.0" AnchorPane.leftAnchor="563.0" AnchorPane.rightAnchor="158.3333333333333" AnchorPane.topAnchor="20.0" />
+    </children>
+</AnchorPane>

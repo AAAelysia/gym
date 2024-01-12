@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitness_club_management_system.Gym">
+    <children>
+        <Button layoutX="115.0" layoutY="103.0" mnemonicParsing="false" onAction="#showPage1" prefHeight="41.0" prefWidth="313.0" text="会员" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="104.33333333333337" />
+        <Button layoutX="115.0" layoutY="167.0" mnemonicParsing="false" onAction="#showPage2" prefHeight="41.0" prefWidth="313.0" text="教练" AnchorPane.leftAnchor="115.33333333333333" AnchorPane.rightAnchor="104.66666666666669" />
+        <Button layoutX="115.0" layoutY="229.0" mnemonicParsing="false" onAction="#showPage3" prefHeight="41.0" prefWidth="313.0" text="器材" AnchorPane.leftAnchor="115.33333333333333" AnchorPane.rightAnchor="104.66666666666669" />
+        <Button layoutX="115.0" layoutY="291.0" mnemonicParsing="false" onAction="#showPage4" prefHeight="41.0" prefWidth="313.0" text="私教" AnchorPane.leftAnchor="115.33333333333333" AnchorPane.rightAnchor="104.66666666666669" />
+        <Button layoutX="115.0" layoutY="352.0" mnemonicParsing="false" onAction="#showPage5" prefHeight="41.0" prefWidth="313.0" text="课程" AnchorPane.leftAnchor="115.33333333333333" AnchorPane.rightAnchor="104.66666666666669" />
+        <ImageView disable="true" layoutX="115.0" layoutY="24.0" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="24.0">
+            <image>
+                <Image url="@../../../pictrue/mulu.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="187.0" layoutY="27.0" prefHeight="41.0" prefWidth="97.0" text="管理员目录" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="248.33333333333331" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
